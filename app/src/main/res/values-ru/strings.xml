@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unknown">\?</string>
+    <string name="delete">Удалить</string>
+    <string name="load_failed">Ошибка при загрузке данных</string>
+    <string name="load_failed_detailed">Ошибка при загрузке: %1$s</string>
+    <string name="load_failed_no_internet">Ошибка загрузки, проверьте наличие интернет-соединения</string>
+    <string name="retry">Повторить</string>
+    <string name="cancel">Отмена</string>
+    <string name="no_results">Совпадений не найдено</string>
+
+    <plurals name="count_selected">
+        <item quantity="one">%1$d выбран</item>
+        <item quantity="few">%1$d выбраны</item>
+        <item quantity="many">%1$d выбраны</item>
+        <item quantity="other">%1$d выбраны</item>
+    </plurals>
+
+    <plurals name="count_removed">
+        <item quantity="one">%1$d элемент удален из Избранного</item>
+        <item quantity="few">%1$d элемента удалены из Избранного</item>
+        <item quantity="many">%1$d элементов удалены из Избранного</item>
+        <item quantity="other">%1$d элемента удалены из Избранного</item>
+    </plurals>
+
+    <plurals name="count_added">
+        <item quantity="one">%1$d элемент добавлен в Избранное</item>
+        <item quantity="few">%1$d элемента добавлены в Избранное</item>
+        <item quantity="many">%1$d элементов добавлены в Избранное</item>
+        <item quantity="other">%1$d элемента добавлены в Избранное</item>
+    </plurals>
+</resources>

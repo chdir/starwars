@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="eye_color_black">чёрный</string>
+    <string name="eye_color_brown">карий</string>
+    <string name="eye_color_blue">голубой</string>
+    <string name="eye_color_green">зелёный</string>
+    <string name="eye_color_blue_gray">серый</string>
+    <string name="eye_color_red">красный</string>
+    <string name="eye_color_pink">красный</string>
+    <string name="eye_color_yellow">жёлтый</string>
+    <string name="eye_color_hazel">жёлтый</string>
+    <string name="eye_color_orange">жёлтый</string>
+    <string name="eye_color_gold">жёлтый</string>
+    <string name="eye_color_unknown">\?</string>
+</resources>

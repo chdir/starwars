@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hair_color_none">-</string>
+    <string name="hair_color_black">black</string>
+    <string name="hair_color_brown">brown</string>
+    <string name="hair_color_white">white</string>
+    <string name="hair_color_blond">blond</string>
+    <string name="hair_color_blonde">blond</string>
+    <string name="hair_color_grey">grey</string>
+    <string name="hair_color_auburn">auburn</string>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name" translatable="false">StarWars Explorer</string>
+    <string name="app_icon">App Icon</string>
+
+    <string name="load_failed">Failed to load data</string>
+    <string name="load_failed_detailed">Load failed: %1$s</string>
+    <string name="load_failed_no_internet">Load failed, check your internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_results">No matching results</string>
+
+    <string name="unknown">\?</string>
+    <string name="delete">Delete</string>
+
+    <plurals name="count_selected">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+
+    <plurals name="count_removed">
+        <item quantity="one">%1$d element removed from Favorites</item>
+        <item quantity="other">%1$d elements removed from Favorites</item>
+    </plurals>
+
+    <plurals name="count_added">
+        <item quantity="one">%1$d element added to Favorites</item>
+        <item quantity="other">%1$d elements added to Favorites</item>
+    </plurals>
+</resources>

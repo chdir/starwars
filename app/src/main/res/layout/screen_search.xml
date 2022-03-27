@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/search_root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/ic_death_star_vector_24"
+            app:title="S.W. API Explorer"
+            app:menu="@menu/toolbar_menu"
+            android:id="@+id/search_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/result_view"
+            android:isScrollContainer="true"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_character_search"
+    />
+
+    <TextView
+            android:id="@+id/search_empty_holder"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="24dp"
+            android:text="@string/load_failed"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+
+    <ProgressBar
+            android:id="@+id/search_progress"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

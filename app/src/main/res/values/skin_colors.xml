@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="skin_color_none">-</string>
+    <string name="skin_color_green">green</string>
+    <string name="skin_color_green_tan">green-tan</string>
+    <string name="skin_color_pale">pale</string>
+    <string name="skin_color_white">white</string>
+    <string name="skin_color_light">light</string>
+    <string name="skin_color_fair">fair</string>
+    <string name="skin_color_grey">grey</string>
+    <string name="skin_color_dark">dark</string>
+    <string name="skin_color_brown">brown</string>
+    <string name="skin_color_gold">gold</string>
+    <string name="skin_color_blue">blue</string>
+    <string name="skin_color_red">red</string>
+    <string name="skin_color_orange">orange</string>
+    <string name="skin_color_silver">silver</string>
+    <string name="skin_color_yellow">yellow</string>
+    <string name="skin_color_tan">tan</string>
+</resources>

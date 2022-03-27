@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/favorites_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+    <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/ic_death_star_vector_24"
+            app:title="S.W. API Explorer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/favorites_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/favorites_view"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_character_search"
+    />
+
+    <TextView
+            android:id="@+id/favorites_empty_holder"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="24dp"
+            android:text="Ни одного сохранённого персонажа пока нет"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="eye_color_brown">brown</string>
+    <string name="eye_color_black">black</string>
+    <string name="eye_color_blue">blue</string>
+    <string name="eye_color_green">green</string>
+    <string name="eye_color_red">red</string>
+    <string name="eye_color_pink">pink</string>
+    <string name="eye_color_blue_gray">blue-1gray</string>
+    <string name="eye_color_yellow">yellow</string>
+    <string name="eye_color_hazel">hazel</string>
+    <string name="eye_color_orange">orange</string>
+    <string name="eye_color_gold">gold</string>
+    <string name="eye_color_unknown">\?</string>
+</resources>

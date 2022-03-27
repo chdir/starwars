@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hair_color_none">-</string>
+    <string name="hair_color_black">чёрные</string>
+    <string name="hair_color_brown">каштановые</string>
+    <string name="hair_color_white">белые</string>
+    <string name="hair_color_blond">светлые</string>
+    <string name="hair_color_blonde">светлые</string>
+    <string name="hair_color_grey">седые</string>
+    <string name="hair_color_auburn">рыжие</string>
+</resources>

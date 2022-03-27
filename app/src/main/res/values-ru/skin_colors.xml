@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="skin_color_none">-</string>
+    <string name="skin_color_green">зелёный</string>
+    <string name="skin_color_green_tan">зелёный</string>
+    <string name="skin_color_pale">светлый</string>
+    <string name="skin_color_light">светлый</string>
+    <string name="skin_color_fair">светлый</string>
+    <string name="skin_color_white">светлый</string>
+    <string name="skin_color_grey">серый</string>
+    <string name="skin_color_brown">тёмный</string>
+    <string name="skin_color_dark">тёмный</string>
+    <string name="skin_color_gold">золотой</string>
+    <string name="skin_color_blue">синий</string>
+    <string name="skin_color_red">красный</string>
+    <string name="skin_color_silver">серебристый</string>
+    <string name="skin_color_yellow">жёлтый</string>
+    <string name="skin_color_orange">жёлтый</string>
+    <string name="skin_color_tan">загорелый</string>
+</resources>
