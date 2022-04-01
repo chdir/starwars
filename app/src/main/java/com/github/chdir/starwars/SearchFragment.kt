@@ -10,7 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.chdir.starwars.db.Character
@@ -27,6 +27,8 @@ import java.util.concurrent.TimeUnit
 import kotlin.collections.HashSet
 
 class SearchFragment : Fragment() {
+    private val viewModel: SearchViewModel by viewModels()
+
     private lateinit var searchAdapter : SearchAdapter
 
     private lateinit var recycler: RecyclerView
@@ -68,8 +70,6 @@ class SearchFragment : Fragment() {
         val searchWidget = findSearchView()
         searchView = searchWidget.findViewById(androidx.appcompat.R.id.search_src_text)
 
-        val viewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
-
         viewModel.getSearchLiveData().observe(this) { handleSearchOutcome(it) }
         viewModel.getFavoritesLiveData().observe(this) { handleFavoritesOutcome(it) }
 
@@ -87,8 +87,6 @@ class SearchFragment : Fragment() {
     }
 
     private fun maybeLoadMore() {
-        val viewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
-
         if (!recycler.canScrollVertically(1)) {
             viewModel.fetchMoreResults()
         }
@@ -97,7 +95,6 @@ class SearchFragment : Fragment() {
     override fun onViewStateRestored(savedInstanceState: Bundle?) {
         super.onViewStateRestored(savedInstanceState)
 
-        val viewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
 
         var editTextEventStream = EditTextObservable
             .create(searchView)
@@ -153,8 +150,6 @@ class SearchFragment : Fragment() {
     private fun handleSingleClick(v: View) {
         val holder = recycler.findContainingViewHolder(v)
 
-        val viewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
-
         val actionMode = this.actionMode
         if (actionMode == null) {
             val character = searchAdapter.getItem(holder!!)
@@ -180,8 +175,6 @@ class SearchFragment : Fragment() {
 
     private fun handleLongClick(view: View): Boolean {
         val holder = recycler.findContainingViewHolder(view)
-
-        val viewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
 
         val character = searchAdapter.checkItem(holder!!)
         if (searchAdapter.checkedCount() == 0) {

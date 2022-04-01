@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +17,8 @@ import com.github.chdir.starwars.widget.FavoritesAdapter
 import com.github.chdir.starwars.db.Character as Character
 
 class FavoritesFragment : Fragment() {
+    private val viewModel: FavoritesViewModel by viewModels()
+
     private lateinit var favoritesAdapter : FavoritesAdapter
 
     private lateinit var favorites: RecyclerView
@@ -46,22 +49,16 @@ class FavoritesFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val viewModel = ViewModelProvider(this).get(FavoritesViewModel::class.java)
-
         viewModel.getFavoritesLiveData().observe(this) { handleFavoritesLoadOutcome(it) }
     }
 
     private fun openCharacterPage(view: View) {
-        val viewModel = ViewModelProvider(this).get(FavoritesViewModel::class.java)
-
         val holder = favorites.findContainingViewHolder(view)
 
         viewModel.openCharacterPage(favoritesAdapter.getItem(holder!!))
     }
 
     private fun deleteItem(view: View) {
-        val viewModel = ViewModelProvider(this).get(FavoritesViewModel::class.java)
-
         val holder = favorites.findContainingViewHolder(view)
 
         viewModel.deleteItem(favoritesAdapter.getItem(holder!!))
